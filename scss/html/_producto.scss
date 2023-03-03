@@ -1,0 +1,41 @@
+//import
+
+
+/* estilos main producto*/
+.main-producto{
+    padding: $medida-cuarta;
+    h1{
+        @include tipografia (3rem, rgb(27, 6, 105), center)
+    }
+    section{
+        @include flex;
+    div{
+        div{
+            gap: $medida-cuarta;
+            div{
+                div{
+                    h5{
+                        @include tipografia (1.5rem, rgb(12, 11, 11), center)
+                    }
+                }
+                
+        }
+    }
+   }
+ }
+}
+
+/* mq tablet productos */
+
+
+@media screen and (min-width: 600px){
+.main-producto{
+        padding: $medida-sexta;
+         }
+
+}
+
+
+
+
+

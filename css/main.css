@@ -1,0 +1,240 @@
+/* reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+footer .logoinstagram, .main-contacto div .imagenwap, .main-quierorevender div .imagenwap {
+  width: 7%;
+  margin: 0.3rem;
+  padding: 0.3rem; }
+
+/* estilos de header*/
+header {
+  background-color: black; }
+
+.navbar-brand {
+  color: whitesmoke;
+  text-transform: uppercase; }
+
+/* estilos de main en index*/
+main {
+  background-color: #d8c9c6; }
+  main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 2rem; }
+
+.container-main {
+  height: 80vh;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% 5% 40%; }
+
+.imagen-inicio {
+  display: none; }
+
+/* estilos de footer */
+footer {
+  background-color: black;
+  text-align: center; }
+  footer h2 {
+    font-size: 1rem;
+    color: whitesmoke;
+    text-align: center; }
+  footer h3 {
+    font-size: 1rem;
+    color: whitesmoke;
+    text-align: center; }
+
+/*mq tablet index*/
+@media screen and (min-width: 600px) {
+  main {
+    background-color: #98af98; }
+  .container-main {
+    padding: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80% 20%; }
+    .container-main .imagen-aromas {
+      display: none; }
+    .container-main .imagen-inicio {
+      display: block;
+      grid-row: span 2; }
+  .imagen-inicio:hover {
+    transform: scale(0.8);
+    opacity: 70%;
+    transition: 3s; }
+  .imagen-aromas:hover {
+    transform: scale(0.8);
+    opacity: 70%;
+    transition: 3s; }
+  .imagen-home:hover {
+    transform: scale(0.8);
+    opacity: 70%;
+    transition: 3s; } }
+
+/*  mq desktop index*/
+@media screen and (min-width: 1024px) {
+  main {
+    background-color: #b0b6b6; }
+  .container-main {
+    padding: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40% 60%; }
+    .container-main .imagen-inicio {
+      display: block;
+      grid-row: span 2; }
+    .container-main .imagen-aromas {
+      display: block;
+      grid-row: span 2; }
+  .imagen-inicio:hover {
+    transform: scale(0.8);
+    opacity: 70%;
+    transition: 3s; }
+  .imagen-aromas:hover {
+    transform: scale(0.8);
+    opacity: 70%;
+    transition: 3s; }
+  .imagen-home:hover {
+    transform: scale(0.8);
+    opacity: 70%;
+    transition: 3s; } }
+
+/* estilos de main en contacto*/
+.main-contacto h1 {
+  font-size: 3rem;
+  color: #1b0669;
+  text-align: center; }
+
+.main-contacto p {
+  font-size: 1rem;
+  color: #03010a;
+  text-align: center; }
+
+.main-contacto section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; }
+  .main-contacto section .form-contacto {
+    background-color: #838396;
+    padding: 3rem; }
+    .main-contacto section .form-contacto .form-label {
+      font-size: 1rem;
+      color: #0c0b0b;
+      text-align: left; }
+
+/* mq tablet de contacto*/
+@media screen and (min-width: 600px) {
+  .main-contacto {
+    padding: 3rem; }
+    .main-contacto p {
+      padding: 2rem; }
+    .main-contacto section {
+      padding: 0.1rem; } }
+
+/* mq desktop de contacto*/
+@media screen and (min-width: 1024px) {
+  .main-contacto {
+    padding: 6rem; }
+    .main-contacto p {
+      padding: 3rem; } }
+
+/* estilos main producto*/
+.main-producto {
+  padding: 1rem; }
+  .main-producto h1 {
+    font-size: 3rem;
+    color: #1b0669;
+    text-align: center; }
+  .main-producto section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-producto section div div {
+      gap: 1rem; }
+      .main-producto section div div div div h5 {
+        font-size: 1.5rem;
+        color: #0c0b0b;
+        text-align: center; }
+
+/* mq tablet productos */
+@media screen and (min-width: 600px) {
+  .main-producto {
+    padding: 3rem; } }
+
+/* estilos de main quienes somos */
+.main-quienessomos {
+  padding: 3rem; }
+  .main-quienessomos h1 {
+    font-size: 3rem;
+    color: #1b0669;
+    text-align: center; }
+  .main-quienessomos section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-quienessomos section div p {
+      font-size: 1rem;
+      color: #010005;
+      text-align: center;
+      margin: 3rem; }
+
+/* mq tablet quienes somos */
+@media screen and (min-width: 600px) {
+  .main-quienessomos {
+    padding: 6rem; }
+    .main-quienessomos .video-quienessomos {
+      width: 400px;
+      height: 400px; } }
+
+/*  mq desktop  quienes somos */
+@media screen and (min-width: 1024px) {
+  .main-quienessomos div p {
+    font-size: 1.5rem;
+    color: #010005;
+    text-align: center; }
+  .main-quienessomos div .video-quienessomos {
+    width: 700px;
+    height: 400px;
+    margin: 3rem; } }
+
+/*estilos de main quiero revender */
+.main-quierorevender {
+  padding: 2rem; }
+  .main-quierorevender h1 {
+    font-size: 3rem;
+    color: #010005;
+    text-align: center;
+    margin: 2rem; }
+  .main-quierorevender section {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main-quierorevender section p {
+      font-size: 1rem;
+      color: #010005;
+      text-align: center; }
+    .main-quierorevender section p {
+      font-size: 1rem;
+      color: #010005;
+      text-align: center; }
+    .main-quierorevender section div .formulario-quierorevender {
+      padding: 2rem;
+      background-color: #838396; }
+      .main-quierorevender section div .formulario-quierorevender .form-label {
+        font-size: 1.5rem;
+        color: #0c0b0b;
+        text-align: left; }
+
+/* mq tablet de quiero revender*/
+@media screen and (min-width: 600px) {
+  .main-quierorevender {
+    padding: 3rem; } }
+
+/* mq desktop quierorevender */
+@media screen and (min-width: 1024px) {
+  .main-quierorevender {
+    padding: 6rem; } }
