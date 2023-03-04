@@ -49,6 +49,21 @@
 @media screen and (min-width: 1024px) {
     .main-quierorevender{
         padding: $medida-septima;
+        section{
+            div{
+                div{
+                    .formulario-quierorevender{
+                    background-color: $color-secundario;
+                }
+
+                }
+            }
+        }
+        form{
+            .formulario-quierorevender{
+            background-color: $color-secundario;
+        }
+        }
     }
 }
 

@@ -5,29 +5,37 @@
 /* estilos de main en contacto*/
 
 .main-contacto{
+
+    padding: $medida-cuarta;
     h1{
-        @include tipografia (3rem, rgb(27, 6, 105), center)
+        @include tipografia (3rem, rgb(27, 6, 105), center);
+        
     }
     p{
-        @include tipografia (1rem, rgb(3, 1, 10), center)
+        @include tipografia (1rem, rgb(3, 1, 10), center);
+    
        
     }
     section{
+       
     @include flex;
     padding: $medida-cuarta;
     
       .form-contacto{
          background-color: $color-quinto;
          padding: $medida-sexta;
+         
+         
         
          .form-label {
             @include tipografia (1rem, rgb(12, 11, 11), left)
          }
-
       }
-      .section-item{
-        height: 600px
-      }
+    .img-carousel{
+        height: 250px;
+    }
+      
+    
     }
     div{
         .imagenwap{
@@ -35,17 +43,33 @@
         }
     }
 }
+
 /* mq tablet de contacto*/
 
 @media screen and (min-width: 600px){
     .main-contacto{
         padding: $medida-sexta;
+        
         p{
             padding: $medida-quinta;
         }
         section{
-            padding: 0.1rem;
+          
+            
+            .form-contacto{
+                background-color: $color-secundario;
+                padding: $medida-sexta;
+                
+       
+                
+            }
+            .img-carousel{
+                height: 300px;
+                width: 550px;
+            }
+        
         }
+        
     }
 }
 
@@ -53,10 +77,18 @@
 
 @media screen and (min-width: 1024px){
     .main-contacto{
-        padding: $medida-septima;
+        padding: $medida-cuarta;
         p{
             padding: $medida-sexta;
         }
+        section{
+
+        .img-carousel{
+            height: 400px;
+            width: 800px;
+           
+        }
+    }
     }
 
 }
