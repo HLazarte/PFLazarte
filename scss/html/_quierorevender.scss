@@ -7,7 +7,7 @@
     padding: $medida-quinta;
     h1{
         @include tipografia (3rem, rgb(1, 0, 5), center);
-        margin: $medida-quinta;
+        margin: $medida-sexta;
     }
     section{
         @include flex;
@@ -29,11 +29,6 @@
         }
     }    
     }
-    div{
-        .imagenwap{
-            @extend %logos;
-        }
-    }
 }
 
 /* mq tablet de quiero revender*/
@@ -41,6 +36,9 @@
 @media screen and (min-width: 600px) {
     .main-quierorevender{
         padding: $medida-sexta;
+        section{
+            margin: $medida-sexta;
+        }
     }
 }
 

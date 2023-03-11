@@ -5,14 +5,19 @@
 .main-producto{
     padding: $medida-cuarta;
     h1{
-        @include tipografia (3rem, rgb(27, 6, 105), center)
+        @include tipografia (3rem, rgb(27, 6, 105), center);
+        margin: $medida-quinta;
     }
     section{
         @include flex;
+        margin: $medida-cuarta;
+      
     div{
         div{
             gap: $medida-cuarta;
+            
             div{
+              
                 div{
                     h5{
                         @include tipografia (1.5rem, rgb(12, 11, 11), center)
@@ -22,8 +27,10 @@
         }
     }
    }
- }
+ } 
 }
+
+
 
 /* mq tablet productos */
 
